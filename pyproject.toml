@@ -1,12 +1,17 @@
 [project]
-name = "quisca"
-version = "0.0.1"
+name="quisca"
+version = "0.0.5"
 description = "Score Aggregator for Quizizz"
-
-dependencies = ["pandas","openpyxl"]
-
+dependencies = ["pandas","openpyxl","tabulate"]
+keywords = ["Quizizz", "quiz", "joinmyquiz","aggregator"]
+requires-python = ">=3.8"
 authors = [
   {name = "Ashvin V", email = "acedeveloper003@gmail.com" }
 ]
-keywords = ["Quizizz", "quiz", "joinmyquiz","aggregator"]
 
+[project.scripts]
+quisca = "quisca:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
