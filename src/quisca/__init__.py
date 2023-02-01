@@ -69,5 +69,3 @@ def main():
     else:
         print("\n - TOP 10 Scores - \n")
         print(tabulate(master_df.head(10).iloc[:,], headers='keys', tablefmt='psql'))
-    
-main()
