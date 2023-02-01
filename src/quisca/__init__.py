@@ -7,10 +7,10 @@ from pathlib import Path
 
 def main():
     parser = argparse.ArgumentParser(description="Score aggregator to compile and get statistics from multiple quizizz reports")
-    parser.add_argument("-f","--files",nargs='+',help="The ")
-    parser.add_argument("-a","--all",action="store_const",const=True,help="")
-    parser.add_argument("-o","--output",action="store",help="")
-    parser.add_argument("-v","--verbose",action="store_const",const=True,help="")
+    parser.add_argument("-f","--files",nargs='+',help="The list of quizizz report files to process")
+    parser.add_argument("-a","--all",action="store_const",const=True,help="Show/print all data")
+    parser.add_argument("-o","--output",action="store",help="Save output into a .xlsx file")
+    parser.add_argument("-v","--verbose",action="store_const",const=True,help="Activate verbose output")
     args = parser.parse_args()
 
     drop_cols = ["First Name","Last Name","Attempt #","Correct","Incorrect","Info","Started At","Total Time Taken","Unattempted","Rank"]
