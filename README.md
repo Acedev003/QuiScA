@@ -1,0 +1,1 @@
+# QuiScA - Quizizz Score Aggregator
