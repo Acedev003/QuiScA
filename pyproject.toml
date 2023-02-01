@@ -1,0 +1,12 @@
+[project]
+name = "quisca"
+version = "0.0.1"
+description = "Score Aggregator for Quizizz"
+
+dependencies = ["pandas","openpyxl"]
+
+authors = [
+  {name = "Ashvin V", email = "acedeveloper003@gmail.com" }
+]
+keywords = ["Quizizz", "quiz", "joinmyquiz","aggregator"]
+
