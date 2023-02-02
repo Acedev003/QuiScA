@@ -3,7 +3,7 @@
 A tool to compile and analyze multiple Quizizz reports to get statistics and rankings of KITS students.
 
 Features : 
-- Merges data from multiple Quizizz reports
+- Merges data from multiple Quizizz reports (excel format)
 - Display all or top 10 scores
 - Option to save aggregated data in an Excel file
 
