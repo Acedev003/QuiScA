@@ -1,6 +1,6 @@
 [project]
 name="quisca"
-version = "0.0.5"
+version = "0.0.6"
 description = "Score Aggregator for Quizizz"
 readme = "README.md"
 license = {text = "MIT License"}
@@ -9,22 +9,20 @@ keywords = ["Quizizz", "quiz", "joinmyquiz","aggregator"]
 requires-python = ">=3.8"
 authors = [ {name = "Ashvin V", email = "acedeveloper003@gmail.com" } ]
 classifiers = [
-  Development Status :: 3 - Alpha,
-  Environment :: Console,
-  Intended Audience :: Education,
-  Intended Audience :: End Users/Desktop,
-  License :: OSI Approved :: MIT License,
-  Programming Language :: Python :: 3.8
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Education",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.8"
 ]
 
 [project.scripts]
 quisca = "quisca:main"
 
-[project.urls]  # Optional
-
-"Homepage" = "https://github.com/acedev003/quisca"
-"Bug Reports" = "https://github.com/acedev003/quisca/issues"
-"Source" = "https://github.com/acedev003/quisca/"
+[project.urls]
+homepage = "https://github.com/acedev003/quisca"
+repository = "https://github.com/Acedev003/QuiScA.git"
 
 [build-system]
 requires = ["setuptools"]
