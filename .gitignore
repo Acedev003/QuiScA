@@ -1,4 +1,5 @@
 env
+test_env
 data
 dist
 src/quisca.egg-info
