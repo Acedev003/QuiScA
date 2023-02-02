@@ -8,8 +8,8 @@ from pathlib import Path
 def main():
     parser = argparse.ArgumentParser(description="A tool to compile and analyze multiple Quizizz reports to get statistics and rankings of KITS students.")
     parser.add_argument("-f","--files",nargs='+',help="List of Quizizz report files to process (required)")
-    parser.add_argument("-a","--all",action="store_const",const=True,help="Show/print all data (default option shows top 10 rankers)")
     parser.add_argument("-o","--output",action="store",help="Save output into a .xlsx file")
+    parser.add_argument("-a","--all",action="store_const",const=True,help="Show/print all data (default option shows top 10 rankers)")
     parser.add_argument("-v","--verbose",action="store_const",const=True,help="Activate verbose output")
     args = parser.parse_args()
 
