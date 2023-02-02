@@ -1,6 +1,6 @@
 # QuiScA - Quizizz Score Aggregator
 
-A tool to compile and analyze multiple Quizizz reports to get statistics and rankings of students.
+A tool to compile and analyze multiple Quizizz reports to get statistics and rankings of KITS students.
 
 Features : 
 - Merges data from multiple Quizizz reports

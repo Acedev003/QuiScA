@@ -6,7 +6,7 @@ from tabulate import tabulate
 from pathlib import Path
 
 def main():
-    parser = argparse.ArgumentParser(description="A tool to compile and analyze multiple Quizizz reports to get statistics and rankings of students.")
+    parser = argparse.ArgumentParser(description="A tool to compile and analyze multiple Quizizz reports to get statistics and rankings of KITS students.")
     parser.add_argument("-f","--files",nargs='+',help="List of Quizizz report files to process (required)")
     parser.add_argument("-a","--all",action="store_const",const=True,help="Show/print all data (default option shows top 10 rankers)")
     parser.add_argument("-o","--output",action="store",help="Save output into a .xlsx file")
@@ -16,7 +16,7 @@ def main():
     drop_cols = ["First Name","Last Name","Attempt #","Correct","Incorrect","Info","Started At","Total Time Taken","Unattempted","Rank"]
     df_list   = []
 
-    pattern   = re.compile(r'([UuPp][Rr][Kk][12][0129])[a-zA-Z][a-zA-Z]\d\d\d\d')
+    pattern   = re.compile(r'([UuPp][RrLl][Kk][12][0129])[a-zA-Z][a-zA-Z]\d\d\d\d')
 
     reg_func = lambda x : None if not pattern.search(x) else pattern.search(x)[0].upper()
     tim_func = lambda x : x.hour * 3600 + x.minute * 60 + x.second
